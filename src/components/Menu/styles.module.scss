@@ -4,7 +4,7 @@
 .menu {
     width: 300px;
     flex-shrink: 0;
-    height: 90vh;
+    height: calc(100vh - 80px);
     padding: 25px 20px 32px 30px;
 
     position: relative;
