@@ -1,0 +1,18 @@
+@import '../../scss/typography.scss';
+
+.news {
+    @include medium;
+
+    p:not(:last-child) {
+        margin-bottom: 34px;
+    }
+}
+
+.subtitle {
+    margin-bottom: 24px;
+}
+
+.link {
+    color: #002bc5;
+    text-decoration: underline;
+}

@@ -1,0 +1,57 @@
+@import '../../scss/variables.scss';
+@import '../../scss/typography.scss';
+
+.header {
+    background: $color-accent;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+    gap: 20px;
+
+    @media (max-width: 600px) {
+        padding: 0 15px;
+    }
+}
+
+.logo {
+    max-width: 210px;
+
+    img {
+        width: 100%;
+    }
+
+    @media (max-width: 600px) {
+        max-width: 150px;
+    }
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    &_img {
+        max-width: 48px;
+
+        img {
+            width: 100%;
+        }
+
+        @media (max-width: 600px) {
+            max-width: 30px;
+        }
+    }
+
+    &_name {
+        @include bold;
+
+        color: #fff;
+
+        @media (max-width: 600px) {
+            font-size: 16px;
+        }
+    }
+}
+

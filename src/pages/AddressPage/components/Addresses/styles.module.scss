@@ -1,0 +1,29 @@
+@import '../../../../scss/typography.scss';
+
+.addresses {
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(2, 0, 97, 0.25);
+}
+
+.title {
+    @include title;
+    color: #000;
+
+    padding-bottom: 16px;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+.list {
+    li {
+        padding: 16px 0;
+        border-bottom: 1px solid #d7d7d7;
+
+        @include medium;
+
+        &:last-child {
+            padding-bottom: 0;
+            border: none;
+        }
+    }
+}

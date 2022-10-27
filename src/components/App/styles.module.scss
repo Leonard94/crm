@@ -1,0 +1,41 @@
+@import '../../scss/variables.scss';
+
+.app {
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+}
+
+.content {
+    padding: 32px;
+    width: 100%;
+    margin-right: 5px;
+
+    height: calc(100vh - 80px);
+    overflow: auto;
+
+    /* Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: $color-accent #f5f5f5;
+
+    /* Chrome/Edge/Safari */
+    &::-webkit-scrollbar {
+        height: 12px;
+        width: 4px;
+    }
+    &::-webkit-scrollbar-track {
+        background: #f5f5f5;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: $color-accent;
+        border-radius: 9px 0 0 9px;
+    }
+
+    section {
+        max-width: 1076px;
+        margin: 0 auto;
+    }
+}

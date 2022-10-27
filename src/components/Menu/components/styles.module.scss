@@ -1,0 +1,54 @@
+@import '../../../scss/variables.scss';
+
+.burger {
+    position: absolute;
+    width: 20px;
+    height: 15px;
+    right: 15px;
+    cursor: pointer;
+
+    display: none;
+
+    @media (max-width: 800px) {
+        display: block;
+    }
+
+    span {
+        display: block;
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        background: $color-accent;
+        
+    }
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.burger_active {
+    .line {
+        transform: rotate(45deg);
+        top: 5px;
+    }
+    .line2 {
+        transform: rotate(-45deg);
+        top: 5px;
+    }
+    .line3 {
+        display: none;
+    }
+}
+
+.line {
+    top: 1px;
+}
+
+.line2 {
+    top: 6px;
+}
+
+.line3 {
+    top: 11px;
+}

@@ -1,0 +1,38 @@
+@import '../../scss/typography.scss';
+@import '../../scss/variables.scss';
+
+.address {
+    @include medium;
+}
+
+.search {
+    margin-bottom: 32px;
+}
+
+.loader {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: 50px auto;
+}
+
+.loader:after {
+    content: ' ';
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid $color-accent;
+    border-color: $color-accent transparent $color-accent transparent;
+    animation: loader 1.2s linear infinite;
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
